@@ -44,12 +44,14 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBoxMinimise = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimise)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxClose
@@ -233,12 +235,26 @@
             this.label5.Text = "Hotel Reservation System";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // FormLogin
+            // pictureBoxMinimise
+            // 
+            this.pictureBoxMinimise.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxMinimise.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMinimise.Image")));
+            this.pictureBoxMinimise.Location = new System.Drawing.Point(1333, 12);
+            this.pictureBoxMinimise.Name = "pictureBoxMinimise";
+            this.pictureBoxMinimise.Size = new System.Drawing.Size(44, 35);
+            this.pictureBoxMinimise.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxMinimise.TabIndex = 2;
+            this.pictureBoxMinimise.TabStop = false;
+            this.pictureBoxMinimise.Click += new System.EventHandler(this.pictureBoxMinimise_Click);
+            this.pictureBoxMinimise.MouseHover += new System.EventHandler(this.pictureBoxMinimise_MouseHover);
+            // 
+            // FormLogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1456, 677);
+            this.Controls.Add(this.pictureBoxMinimise);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
@@ -250,7 +266,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FormLogin";
+            this.Name = "FormLogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -263,6 +279,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHide)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimise)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -284,6 +301,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBoxMinimise;
     }
 }
 

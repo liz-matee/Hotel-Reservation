@@ -68,6 +68,18 @@ namespace Hotel_Reservation_system
             this.Close();
         }
 
+        private void pictureBoxMinimise_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(pictureBoxMinimise, "Minimise");
+
+        }
+
+        private void pictureBoxMinimise_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+
         private void pictureBoxShow_MouseHover(object sender, EventArgs e)
         {
             toolTip1.SetToolTip(pictureBoxShow, "Show Password");
@@ -120,5 +132,7 @@ namespace Hotel_Reservation_system
                 }
             }
         }
+
+        
     }
 }
